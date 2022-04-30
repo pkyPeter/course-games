@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.26c9dfa5.css",
-    "main.js": "/static/js/main.613064ac.js",
+    "main.js": "/static/js/main.5353f811.js",
     "static/media/wooden-fish.jpg": "/static/media/wooden-fish.fbc3396675623e5ad7a5.jpg",
     "static/media/sand-bell.jpg": "/static/media/sand-bell.f29b321b8b462247be8c.jpg",
     "static/media/xylophone.jpg": "/static/media/xylophone.1722cbbcc8cb9108efb4.jpg",
@@ -16,10 +16,10 @@
     "static/media/music.png": "/static/media/music.f26b1f0cc19cb0124f08.png",
     "index.html": "/index.html",
     "main.26c9dfa5.css.map": "/static/css/main.26c9dfa5.css.map",
-    "main.613064ac.js.map": "/static/js/main.613064ac.js.map"
+    "main.5353f811.js.map": "/static/js/main.5353f811.js.map"
   },
   "entrypoints": [
     "static/css/main.26c9dfa5.css",
-    "static/js/main.613064ac.js"
+    "static/js/main.5353f811.js"
   ]
 }
