@@ -6,7 +6,7 @@ import Sidebar from "components/Sidebar";
 function App() {
   return (
     <div className="App h-screen w-screen">
-      <BrowserRouter>
+      <BrowserRouter basename="course-games">
         <Sidebar />
         <div className="px-6 py-4">
           <Routes>
