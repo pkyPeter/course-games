@@ -17,3 +17,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@layer utilities {
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+  }
+  .rotateY-180 {
+    transform: rotateY(180deg);
+  }
+}
