@@ -3,14 +3,16 @@ import CardImg from "assets/music.png";
 
 const imageBase = process.env.NODE_ENV === "development" ? "" : "/course-games";
 
-const Card = ({ flipped, imgSrc, name, onClick, onClose, onRemove }) => {
+const Card = ({ flipped, over, imgSrc, name, onClick, onClose, onRemove }) => {
   const clickHandler = (e) => {
     onClick(e, name);
   };
 
   return (
     <div
-      className="flip-card w-[12.5rem] h-[12.5rem] bg-transparent rounded-md	overflow-hidden shadow-md"
+      className={classNames("flip-card w-[12.5rem] h-[12.5rem] bg-transparent rounded-md	overflow-hidden shadow-md", {
+        "opacity-0": over,
+      })}
       onClick={clickHandler}
     >
       <div

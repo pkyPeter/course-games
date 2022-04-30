@@ -18,56 +18,67 @@ const Guess = () => {
       name: "Castanets",
       imgSrc: Castanets,
       flipped: false,
+      over: false,
     },
     {
       name: "Cymbals",
       imgSrc: Cymbals,
       flipped: false,
+      over: false,
     },
     {
       name: "Drum",
       imgSrc: Drum,
       flipped: false,
+      over: false,
     },
     {
       name: "IconPiano",
       imgSrc: IconPiano,
       flipped: false,
+      over: false,
     },
     {
       name: "SandBell",
       imgSrc: SandBell,
       flipped: false,
+      over: false,
     },
     {
       name: "SnareDrum",
       imgSrc: SnareDrum,
       flipped: false,
+      over: false,
     },
     {
       name: "Tambourine",
       imgSrc: Tambourine,
       flipped: false,
+      over: false,
     },
     {
       name: "Timpani",
       imgSrc: Timpani,
       flipped: false,
+      over: false,
     },
     {
       name: "Triangle",
       imgSrc: Triangle,
       flipped: false,
+      over: false,
     },
     {
       name: "WoodenFish",
       imgSrc: WoodenFish,
       flipped: false,
+      over: false,
     },
     {
       name: "Xylophone",
       imgSrc: Xylophone,
       flipped: false,
+      over: false,
     },
   ]);
   const defaultInstruments = useRef(instruments);
@@ -94,7 +105,11 @@ const Guess = () => {
 
   const onRemove = (e, name) => {
     setInstruments((prevI) =>
-      prevI.filter((instrument) => instrument.name !== name)
+      prevI.map((instrument) =>
+        instrument.name === name
+          ? { ...instrument, over: true }
+          : instrument
+      )
     );
   };
 
@@ -127,7 +142,7 @@ const Guess = () => {
             toggleAll(false);
           }}
         >
-          開始遊戲
+          蓋上全部
         </button>
       </div>
       {instruments.map((instrument) => {
@@ -137,6 +152,7 @@ const Guess = () => {
             imgSrc={instrument.imgSrc}
             name={instrument.name}
             flipped={instrument.flipped}
+            over={instrument.over}
             onClick={onClick}
             onClose={onClose}
             onRemove={onRemove}
