@@ -1,5 +1,5 @@
 import Card from "components/Card";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Castanets from "assets/instruments/castanets.jpg";
 import Cymbals from "assets/instruments/cymbals.jpg";
 import Drum from "assets/instruments/drum.jpg";
@@ -13,7 +13,6 @@ import WoodenFish from "assets/instruments/wooden-fish.jpg";
 import Xylophone from "assets/instruments/xylophone.jpg";
 
 const Guess = () => {
-  console.log("[Castanets]", Castanets);
   const [instruments, setInstruments] = useState([
     {
       name: "Castanets",
@@ -71,6 +70,8 @@ const Guess = () => {
       flipped: false,
     },
   ]);
+  const defaultInstruments = useRef(instruments);
+  console.log(defaultInstruments);
 
   const onClick = (e, name) => {
     console.log("clicked", name);
@@ -104,6 +105,14 @@ const Guess = () => {
   return (
     <div className="flex flex-wrap gap-6">
       <div className="flex justify-center gap-4 bottom-3 w-full">
+        <button
+          className="rounded border text-main-green px-1.5 py-1 border-main-green bg-white hover:bg-main-green-opacity-6 hover:text-white hover:border-white"
+          onClick={(e) => {
+            setInstruments([...defaultInstruments.current]);
+          }}
+        >
+          重新開始
+        </button>
         <button
           className="rounded border text-main-green px-1.5 py-1 border-main-green bg-white hover:bg-main-green-opacity-6 hover:text-white hover:border-white"
           onClick={(e) => {
