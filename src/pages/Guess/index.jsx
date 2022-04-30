@@ -93,7 +93,7 @@ const Guess = () => {
 
   const onRemove = (e, name) => {
     setInstruments((prevI) =>
-      prevI.filter((instrument) => instrument.name === name)
+      prevI.filter((instrument) => instrument.name !== name)
     );
   };
 
