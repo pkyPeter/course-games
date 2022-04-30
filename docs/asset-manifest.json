@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b6d2037.css",
-    "main.js": "/static/js/main.4f3b7c62.js",
+    "main.css": "/static/css/main.26c9dfa5.css",
+    "main.js": "/static/js/main.613064ac.js",
+    "static/media/wooden-fish.jpg": "/static/media/wooden-fish.fbc3396675623e5ad7a5.jpg",
+    "static/media/sand-bell.jpg": "/static/media/sand-bell.f29b321b8b462247be8c.jpg",
+    "static/media/xylophone.jpg": "/static/media/xylophone.1722cbbcc8cb9108efb4.jpg",
+    "static/media/timpani.jpg": "/static/media/timpani.a9be0d0e8f2373ca4051.jpg",
+    "static/media/drum.jpg": "/static/media/drum.3d009a9b72072d4e566e.jpg",
+    "static/media/snare-drum.jpg": "/static/media/snare-drum.c041da3e7989eebf33e4.jpg",
+    "static/media/tambourine.jpg": "/static/media/tambourine.339c0474390f3dc92d91.jpg",
+    "static/media/castanets.jpg": "/static/media/castanets.1b9d1b5dba02eebc51e7.jpg",
+    "static/media/triangle.jpg": "/static/media/triangle.127a1e38a01f814a922d.jpg",
+    "static/media/iron-piano.jpg": "/static/media/iron-piano.a1db9b59e3d7b4636445.jpg",
+    "static/media/cymbals.jpg": "/static/media/cymbals.92b4469c4c3775f14ab9.jpg",
+    "static/media/music.png": "/static/media/music.f26b1f0cc19cb0124f08.png",
     "index.html": "/index.html",
-    "main.5b6d2037.css.map": "/static/css/main.5b6d2037.css.map",
-    "main.4f3b7c62.js.map": "/static/js/main.4f3b7c62.js.map"
+    "main.26c9dfa5.css.map": "/static/css/main.26c9dfa5.css.map",
+    "main.613064ac.js.map": "/static/js/main.613064ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b6d2037.css",
-    "static/js/main.4f3b7c62.js"
+    "static/css/main.26c9dfa5.css",
+    "static/js/main.613064ac.js"
   ]
 }
