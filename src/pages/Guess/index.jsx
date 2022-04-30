@@ -13,6 +13,7 @@ import WoodenFish from "assets/instruments/wooden-fish.jpg";
 import Xylophone from "assets/instruments/xylophone.jpg";
 
 const Guess = () => {
+  console.log('[Castanets]', Castanets)
   const [instruments, setInstruments] = useState([
     {
       name: "Castanets",
