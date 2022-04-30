@@ -1,7 +1,7 @@
 import React from "react";
 
 const Matches = () => {
-  return <div>Matches</div>;
+  return <div>ㄘㄨˇ理中...請騷後</div>;
 };
 
 export default Matches;
