@@ -13,7 +13,7 @@ import WoodenFish from "assets/instruments/wooden-fish.jpg";
 import Xylophone from "assets/instruments/xylophone.jpg";
 
 const Guess = () => {
-  console.log('[Castanets]', Castanets)
+  console.log("[Castanets]", Castanets);
   const [instruments, setInstruments] = useState([
     {
       name: "Castanets",
@@ -73,7 +73,7 @@ const Guess = () => {
   ]);
 
   const onClick = (e, name) => {
-    console.log('clicked', name)
+    console.log("clicked", name);
     setInstruments((prevI) =>
       prevI.map((instrument) =>
         instrument.name === name ? { ...instrument, flipped: true } : instrument
@@ -97,8 +97,30 @@ const Guess = () => {
     );
   };
 
+  const toggleAll = (flipped) => {
+    setInstruments((prev) => prev.map((ins) => ({ ...ins, flipped })));
+  };
+
   return (
     <div className="flex flex-wrap gap-6">
+      <div className="flex justify-center gap-4 bottom-3 w-full">
+        <button
+          className="rounded border text-main-green px-1.5 py-1 border-main-green bg-white hover:bg-main-green-opacity-6 hover:text-white hover:border-white"
+          onClick={(e) => {
+            toggleAll(true);
+          }}
+        >
+          掀開全部
+        </button>
+        <button
+          className="rounded border text-main-green px-1.5 py-1 border-main-green bg-white hover:bg-main-green-opacity-6 hover:text-white hover:border-white"
+          onClick={(e) => {
+            toggleAll(false);
+          }}
+        >
+          開始遊戲
+        </button>
+      </div>
       {instruments.map((instrument) => {
         return (
           <Card
