@@ -26,7 +26,7 @@ const Sidebar = () => {
     <div className="flex gap-[0.3rem] py-2 pl-6">
       {tabs.map((tab) => {
         return (
-          <NavLink className={getNavLinkClassNames} to={tab.to}>
+          <NavLink key={tab.to} className={getNavLinkClassNames} to={tab.to}>
             {tab.label}
           </NavLink>
         );
