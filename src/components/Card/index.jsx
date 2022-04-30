@@ -1,4 +1,3 @@
-import "./index.css";
 import classNames from "classnames";
 import CardImg from "assets/music.png";
 
